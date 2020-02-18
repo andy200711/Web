@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>다차원 포인터 변수의 사용</title>
+    <meta charset = "utf-8">
+  </head>
+
+  <body>
+    <h2>-다차원 포인터 변수의 사용</h2>
+    이건 예시 하나로 설명이 가능하다.<br>
+    <strong>먼저 이 다차원 포인터 변수는 n-1포인터 변수의 주소를 저장하고 있다.</strong><p>
+
+      <strong>ex)</strong>: int a=20;<br>
+     &nbsp&nbsp&nbsp&nbspint *p= &a;<br>
+     &nbsp&nbsp&nbsp&nbspint **pp= &p;<br>
+     &nbsp&nbsp&nbsp&nbspprintf("%d", *pp); <u>//역참조하여 pp가 가리키는 변수의 값 즉 a의 주소값을 출력</u><br>
+     &nbsp&nbsp&nbsp&nbspprintf("%d", **pp);<u>//역참조를 2번 하여 pp가 가리키는 변수의 그 포인터 변수가 가리키는 변수의 값을 출력</u><br>
+     &nbsp&nbsp&nbsp&nbsp즉, a의 값을 출력<p>
+
+    <img src="coding5.jpg" width="20%"><br>
+    <a href= "https://blog.naver.com/mobile-legend/221667725641" target="_blank" title = "C언어 포인터의 모든것">C언어 포인터</a>
+  </body>
+</html>
